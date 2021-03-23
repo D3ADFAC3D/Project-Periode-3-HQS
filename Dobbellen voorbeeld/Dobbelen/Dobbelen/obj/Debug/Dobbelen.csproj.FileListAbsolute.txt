@@ -8,3 +8,13 @@ D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csproj.CoreCompileInputs.c
 D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.exe
 D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.pdb
 D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.Form1.resources
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\bin\Debug\Dobbelen.exe.config
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\bin\Debug\Dobbelen.exe
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\bin\Debug\Dobbelen.pdb
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csprojAssemblyReference.cache
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.Form1.resources
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.Properties.Resources.resources
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csproj.GenerateResource.cache
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csproj.CoreCompileInputs.cache
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.exe
+D:\Project-Periode-3-HQS\Dobbellen voorbeeld\Dobbelen\Dobbelen\obj\Debug\Dobbelen.pdb
