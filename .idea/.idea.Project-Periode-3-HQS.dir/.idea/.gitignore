@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Project-Periode-3-HQS.iml
+# Datasource local storage ignored files
+/../../../../../../:\RiderProjects\Project-Periode-3-HQS\.idea\.idea.Project-Periode-3-HQS.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

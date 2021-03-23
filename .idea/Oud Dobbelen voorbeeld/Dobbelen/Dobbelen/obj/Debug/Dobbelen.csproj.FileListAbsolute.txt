@@ -1,0 +1,10 @@
+D:\RiderProjects\Dobbelen\Dobbelen\bin\Debug\Dobbelen.exe.config
+D:\RiderProjects\Dobbelen\Dobbelen\bin\Debug\Dobbelen.exe
+D:\RiderProjects\Dobbelen\Dobbelen\bin\Debug\Dobbelen.pdb
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csprojAssemblyReference.cache
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.Properties.Resources.resources
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csproj.GenerateResource.cache
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.exe
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.pdb
+D:\RiderProjects\Dobbelen\Dobbelen\obj\Debug\Dobbelen.Form1.resources
