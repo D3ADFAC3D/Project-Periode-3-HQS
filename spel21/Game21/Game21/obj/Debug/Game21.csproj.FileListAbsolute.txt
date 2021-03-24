@@ -1,0 +1,10 @@
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\bin\Debug\Game21.exe.config
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\bin\Debug\Game21.exe
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\bin\Debug\Game21.pdb
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.csprojAssemblyReference.cache
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.Form1.resources
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.Properties.Resources.resources
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.csproj.GenerateResource.cache
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.csproj.CoreCompileInputs.cache
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.exe
+C:\Users\larsb\Documents\yeet\spel21\Game21\Game21\obj\Debug\Game21.pdb
