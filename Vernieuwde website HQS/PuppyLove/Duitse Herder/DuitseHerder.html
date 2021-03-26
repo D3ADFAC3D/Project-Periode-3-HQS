@@ -4,33 +4,33 @@
 
     <title>Puppylove</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <!-- Pictogrammen -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="../../Styling&Scripts/hoofdstyling.css">
-    <link rel="stylesheet" href="../../Styling&Scripts/HQS_Puppylove.css">
-    <link rel="stylesheet" href="DuitseHerder.css">
-    <link rel="icon" href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png">
+    <link href="../../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
+    <link href="DuitseHerder.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+<body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button" style="background-color: white">
 
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
 
             </button>
 
-            <a class="navbar-brand" style="padding-top: 7.5px;" href="../index.html"><img
-                    src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+            <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
+                    alt="" class="Image" src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
 
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -42,15 +42,15 @@
                 <li><a href="../../index.html#services" target="_blank">WAARDEN</a></li>
                 <li><a href="../../index.html#portfolio" target="_blank">PORTFOLIO</a></li>
                 <li><a href="../../index.html#contact" target="_blank">CONTACT</a></li>
-                <li><a id="date" href="#"></a></li>
-        
-        <script>
+                <li><a href="#" id="date"></a></li>
 
-          var today = new Date();
-          var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-          document.getElementById("date").innerHTML = "DATUM: "+ date;
-        
-        </script>
+                <script>
+
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+
+                </script>
 
             </ul>
         </div>
@@ -65,24 +65,29 @@
 </div>
 
 <!-- Container (About) -->
-<div id="about" class="container-fluid text-center">
+<div class="container-fluid text-center" id="about">
     <div class="row">
         <div class="col-sm-12 pager">
             <div id="info">
 
                 <h1 class="text-primary">Duitse Herder</h1>
                 <p>
-                    Te herkennen aan het middelgrote, ranke postuur is de Duitse herder een van de meest atletische hondensoorten ter wereld. <br>
-                    Vanaf 22 April 1899 is de Duitse herder officieel een hondenras. Zoals de naam al suggereert, origineert dit ras uit Duitsland.<br><br>
+                    Te herkennen aan het middelgrote, ranke postuur is de Duitse herder een van de meest atletische
+                    hondensoorten ter wereld. <br>
+                    Vanaf 22 April 1899 is de Duitse herder officieel een hondenras. Zoals de naam al suggereert,
+                    origineert dit ras uit Duitsland.<br><br>
                     Duitse herders zijn trouwe, hardwerkende honden en hebben veel lichaamsbeweging nodig. <br> <br>
-                    Hierdoor zijn het ideale speur en reddingshonden. Ze worden dan ook vaak ingezet door politie of bij zoekacties. <br>
+                    Hierdoor zijn het ideale speur en reddingshonden. Ze worden dan ook vaak ingezet door politie of bij
+                    zoekacties. <br>
                     Ook zijn Duitse herders erg intelligent en goed met kinderen. Ze leren snel en luisteren goed. <br>
                     Je moet wel consequent zijn, want het zijn van nature dominante honden.
                 </p>
 
-                <b class="text-info">Voor meer algemene informatie klik <a href="https://nl.wikipedia.org/wiki/Duitse_herder">hier</a>.</b> <br>
-                <b class="text-info">Voor meer informatie over de geschiedenis van de Duitse herder klik <a href="https://plazilla.com/page/4294975065/geschiedenis-van-de-duitse-herder">hier</a>.</b>
-            
+                <b class="text-info">Voor meer algemene informatie klik <a
+                        href="https://nl.wikipedia.org/wiki/Duitse_herder">hier</a>.</b> <br>
+                <b class="text-info">Voor meer informatie over de geschiedenis van de Duitse herder klik <a
+                        href="https://plazilla.com/page/4294975065/geschiedenis-van-de-duitse-herder">hier</a>.</b>
+
             </div>
 
             <div class="tab" id="tabHerder"
@@ -97,45 +102,55 @@
                         x
                     </div>
                 </div>
-                
+
                 <div class="content-right">
                     <div id="imageContainer">
                         <div class="row">
                             <div class="column">
 
-                                <img src="img/sofia-guaico-xqqjZznrar0-unsplash.jpg" alt="" style="height: 31%">
-                                <img src="img/pexels-jozef-fehér-969381.jpg" alt="" style="height: 16%">
-                                <img src="img/pexels-rrinna-2071556.jpg" alt="" style="height: 16%">
-                                <img src="img/anish-hassan-pGbTXB2weKY-unsplash.jpg" alt="" style="height: 36%">
-                            
+                                <img alt="" src="img/pexels-adam-kontor-333083.jpg">
+                                <img alt="" src="img/sofia-guaico-xqqjZznrar0-unsplash.jpg">
+                                <img alt="" src="img/anish-hassan-pGbTXB2weKY-unsplash.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-kopie.jpg">
+                                <img alt="" src="img/Norah.JPG" height="20%">
+
+                            </div>
+                            <div class="column">
+                                <img alt="" src="img/lukas-vanatko-WvqRJNLdEFc-unsplash.jpg">
+                                <img alt="" src="img/amanda-sofia-pellenz-0HVlMQxzRuM-unsplash.jpg">
+                                <img alt="" src="img/pexels-gabriel-p-4264389.jpg">
+                                <img alt="" src="img/pexels-rrinna-2071556.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1800314.jpg">
+
                             </div>
                             <div class="column">
 
-                                <img src="img/amanda-sofia-pellenz-0HVlMQxzRuM-unsplash.jpg" alt="">
-                                <img src="img/pexels-gabriel-p-4264389.jpg" alt="">
-                                <img src="img/pexels-jozef-fehér-kopie.jpg" alt="">
-                            
+                                <img alt="" src="img/sumudu-mohottige-L-Y1GNYW0jw-unsplash.jpg">
+                                <img alt="" src="img/madeline-ingram-lsiBD2aj5QE-unsplash.jpg" height="26%">
+                                <img alt="" src="img/pexels-pixabay-236622.jpg">
+                                <img alt="" src="img/wannes-de-mol-PCtm5A_plbo-unsplash.jpg" height="20%">
+                                <img alt="" src="img/pexels-ekaterina-bolovtsova-6606825.jpg">
+
+
                             </div>
                             <div class="column">
+                                <img alt="" src="img/pexels-boho-photography-5097412.jpg">
+                                <img alt="" src="img/pexels-velroy-fernandes-4218369.jpg" height="26%">
+                                <img alt="" src="img/tamas-tuzes-katai-ClCJDkLPoNM-unsplash.jpg" height="22.5%">
+                                <img alt="" src="img/pexels-carl-adrian-barcelo-3709026.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1633522.jpg">
 
-                                <img src="img/sumudu-mohottige-L-Y1GNYW0jw-unsplash.jpg" alt="">
-                                <img src="img/madeline-ingram-lsiBD2aj5QE-unsplash.jpg" alt="">
-                                <img src="img/pexels-pixabay-236622.jpg" alt="">
-                                <img src="img/wannes-de-mol-PCtm5A_plbo-unsplash.jpg" alt="" style="height: 26%">
-                            
-                            </div>
-                            <div class="column">
 
-                                <img src="img/pexels-velroy-fernandes-4218369.jpg" alt="">
-                                <img src="img/tamas-tuzes-katai-ClCJDkLPoNM-unsplash.jpg" alt="">
-                                <img src="img/pexels-carl-adrian-barcelo-3709026.jpg" alt="">
-                            
                             </div>
                         </div>
                         <div class="row">
 
-                            <img src="img/pexels-k-zoltan-342214.jpg" alt="" style="max-width: 100%">
-                        
+                            <img alt="" src="img/pexels-k-zoltan-342214.jpg" style="max-width: 100%; margin-bottom: 10px">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"
+                                    height="800px" src="https://www.youtube.com/embed/0EoLBfKjBQc"
+                                    title="YouTube video player"
+                                    width="100%"></iframe>
+
                         </div>
                     </div>
                 </div>
@@ -145,7 +160,7 @@
 </div>
 
 <!-- Container (Contact) -->
-<div id="contact" class="container-fluid bg-grey">
+<div class="container-fluid bg-grey" id="contact">
 
     <h2 class="text-center">CONTACT</h2>
 
@@ -156,19 +171,19 @@
             <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
             <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
             <p><span class="glyphicon glyphicon-envelope"></span> 0327746@student.rocvantwente.nl</p>
-        
+
         </div>
         <div class="col-sm-7 slideanim">
             <div class="row">
                 <div class="col-sm-6 form-group">
 
-                    <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
-                
+                    <input class="form-control" id="naam" name="naam" placeholder="Naam" required type="text">
+
                 </div>
                 <div class="col-sm-6 form-group">
 
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                
+                    <input class="form-control" id="email" name="email" placeholder="Email" required type="email">
+
                 </div>
             </div>
 
@@ -177,7 +192,7 @@
                 <div class="col-sm-12 form-group">
 
                     <button class="btn btn-default pull-right" type="submit">Verstuur</button>
-                
+
                 </div>
             </div>
         </div>
@@ -189,7 +204,7 @@
     <a href="#myPage" title="To Top">
 
         <span class="glyphicon glyphicon-chevron-up" style="color: cornflowerblue"></span>
-    
+
     </a>
 
     <p>Copyright® of High Quality Software 2021</p>
@@ -232,7 +247,7 @@
             });
         });
     })
-    
+
 </script>
 <br>
 </body>
