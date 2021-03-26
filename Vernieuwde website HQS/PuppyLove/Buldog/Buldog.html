@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <title>Puppylove</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Pictogrammen -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="../../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
+    <link href="Buldog.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
+
+</head>
+<body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" style="background-color: white"
+                    type="button">
+
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
+                    alt="" class="Image" src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="../../index.html#about" target="_blank">OVER ONS</a></li>
+                <li><a href="../../index.html#mission" target="_blank">MISSIE</a></li>
+                <li><a href="../../index.html#services" target="_blank">WAARDEN</a></li>
+                <li><a href="../../index.html#portfolio" target="_blank">PORTFOLIO</a></li>
+                <li><a href="../../index.html#contact" target="_blank">CONTACT</a></li>
+                <li><a href="#" id="date"></a></li>
+
+                <script>
+
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+
+                </script>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+
+    <h1>PuppyLove</h1>
+    <p>Animalfriends Incorporated</p>
+
+</div>
+
+<!-- Container (About) -->
+<div class="container-fluid text-center" id="about">
+    <div class="row">
+        <div class="col-sm-12 pager">
+            <div id="info">
+
+                <h1 class="text-primary">Engelse Buldog</h1>
+
+
+                <h3> Buldog land van herkomst:</h3> <br>
+                De buldog of als sommige mensen het noemen de Engelse buldog. <br>
+                Het land van herkomst van de buldog is het verenigd koninkrijk.<br><br>
+
+                <h3>Hoe lang bestaat de ras buldog: </h3> <br>
+                De ras buldog bestaat al sinds het jaar 1231 waar de man Warren uit Stanford.<br>
+                De ras buldog is een nauwe bloedverwant van de oude vechthonden van het molossertype.<br>
+                In het jaar 1500 werd de hond in het Engelse literatuur bondogge en bolddogge.<br>
+                De oorspronkelijke naam buldog kwam voor in een brief van 1631 en 1632.<br>
+                Het eerste bewijs dat de buldog bestond werd gemaakt in 1740 in de vorm van een foto.<br>
+                <br>
+
+                <h3>Kenmerken van een buldog: </h3> <br>
+                Je herkent een buldog aan hun gerimpelde wangen en erg gladde vacht de buldog heeft ook sterke voorpoten
+                en lange achterpoten.<br>
+                De buldog is vriendelijk tegen mensen vooral kinderen en ook andere hondenrassen.<br>
+                De buldog is alleen wel erg koppig en beschermend.<br>
+                De gemiddelde volwassen buldog weegt tussen de 22 en 25 kilogram.<br>
+                De vacht is kortharig en komt voor in een paar verschillende kleuren bijv.<br>
+                beige, gestroomd, wit en wit gevlekt.<br> <br>
+
+                <h3>Gezondheid van buldog: </h3> <br> <br>
+                De buldog kan ademhalingsproblemen krijgen.<br>
+                Dat komt omdat de buldog kortademig is en zeer gevoelig is voor het brachycefaal obstructief
+                syndroom,<br> dit is een aandoening die veel voorkomt bij honden met een kleine schedel en een platte
+                neus <br> dat lijdt tot ernstige ademhalingsproblemen en een verminderd uithoudingsvermogen.
+                Er komt ook regelmatig gewichtsproblemen voor bij hun heupen en knieën.<br>
+                De buldog hebben ook moeilijkheid om zichzelf voort te planten waardoor ze vaak een keizersnee nodig
+                hebben.<br>
+
+                <b class="text-info">Voor meer algemene informatie klik <a
+                        href="https://nl.wikipedia.org/wiki/Engelse_buldog">hier</a>.</b> <br>
+
+            </div>
+
+            <div class="tab" id="tabBuldog"
+                 onclick="document.getElementById('cardBuldog').style.display='block';">
+                Foto's
+            </div>
+
+            <div class="cards" id="cardBuldog" style="display: none">
+                <div class="content-left">
+                    <div class="x-icon" onclick=
+                            "document.getElementById('cardBuldog').style.display='none';">
+                        x
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div id="imageContainer">
+                        <div class="row">
+                            <div class="column" id="column1">
+
+                                <img alt="" src="img/pexels-vlad-chețan-3096969.jpg" height="30%">
+                                <img alt="" src="img/pexels-alexia-bianchini-3693208.jpg" height="16%">
+                                <img alt="" src="img/pexels-freestocksorg-6679995.jpg">
+                                <img alt="" src="img/pexels-christian-montes-5288556.jpg" height="27%">
+                                <img alt="" src="img/pexels-joergk-photography-2069940.jpg" height="15%">
+
+                            </div>
+                            <div class="column" id="column2">
+                                <img alt="" src="img/pexels-jens-mahnke-776078.jpg">
+                                <img alt="" src="img/pexels-adrianna-calvo-1596579.jpg">
+                                <img alt="" src="img/pexels-adrianna-calvo-1596577.jpg">
+                                <img alt="" src="img/pexels-nikola-5883460.jpg" height="15%">
+                                <img alt="" src="img/pexels-anna-shvets-4587991.jpg" height="32%">
+
+                            </div>
+                            <div class="column">
+
+                                <img alt="" src="img/pexels-erik-mclean-4061391.jpg">
+                                <img alt="" src="img/pexels-felipe-cespedes-3067503.jpg">
+                                <img alt="" src="img/pexels-marcos-bais-1843695.jpg">
+                                <img alt="" src="img/pexels-pixabay-160846.jpg">
+
+                            </div>
+                            <div class="column">
+                                <img alt="" src="img/pexels-maria-rosenberg-2171583.jpg">
+                                <img alt="" src="img/pexels-creative-workshop-3978352.jpg">
+                                <img alt="" src="img/pexels-martin-dufosset-3930940.jpg">
+                                <img alt="" src="img/pexels-streetwindy-2144292.jpg">
+                                <img alt="" src="img/pexels-scott-spedding-2918094.jpg">
+                                <img alt="" src="img/pexels-kervin-edward-lara-4452255.jpg" height="14%">
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <img alt="" src="../Buldog/img/pexels-freestocksorg-5373946.jpg"
+                                 style="max-width: 100%; margin-bottom: 10px;" id="borderphoto">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="0"
+                                    height="800" src="https://www.youtube.com/embed/s1oo8qheP9c"
+                                    title="YouTube video player"
+                                    width="100%"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Contact) -->
+<div class="container-fluid bg-grey" id="contact">
+
+    <h2 class="text-center">CONTACT</h2>
+
+    <div class="row">
+        <div class="col-sm-5 text-center">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> 0327746@student.rocvantwente.nl</p>
+
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="naam" name="naam" placeholder="Naam" required type="text">
+
+                </div>
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="email" name="email" placeholder="Email" required type="email">
+
+                </div>
+            </div>
+
+            <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+
+                    <button class="btn btn-default pull-right" type="submit">Verstuur</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+
+        <span class="glyphicon glyphicon-chevron-up" style="color: cornflowerblue"></span>
+
+    </a>
+
+    <p>Copyright® of High Quality Software 2021</p>
+
+</footer>
+
+<script>
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+
+</script>
+<br>
+</body>
+<!-- Bootstrap en jquery files -->
+<script src="../../Styling&Scripts/bootstrap/jquery.min.js"></script>
+<script src="../../Styling&Scripts/bootstrap/bootstrap.min.js"></script>
+<!--<script src="../../Styling&Scripts/download&beveiliging.js"></script>-->
+</html>

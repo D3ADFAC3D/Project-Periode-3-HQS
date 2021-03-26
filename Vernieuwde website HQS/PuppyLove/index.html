@@ -3,28 +3,28 @@
 <head>
     <title>Puppylove</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <!-- Pictogrammen -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="../Styling&Scripts/hoofdstyling.css">
-    <link rel="stylesheet" href="../Styling&Scripts/HQS_Puppylove.css">
+    <link href="../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
+    <link href="../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
 
-    <link rel="icon" href="../Styling&Scripts/afbeeldingen/fav_puppylove.png">
+    <link href="../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+<body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" style="padding-top: 7.5px;" href="../index.html"><img
-                    src="../Styling&Scripts/afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+            <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
+                    alt="" class="Image" src="../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -33,11 +33,11 @@
                 <li><a href="../index.html#services">WAARDEN</a></li>
                 <li><a href="../index.html#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a id="date" href="#"></a></li>
+                <li><a href="#" id="date"></a></li>
                 <script>
                     var today = new Date();
                     var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-                    document.getElementById("date").innerHTML = "DATUM: "+ date;
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
                 </script>
             </ul>
         </div>
@@ -49,7 +49,7 @@
 </div>
 
 <!-- Container (About) -->
-<div id="about" class="container-fluid text-center">
+<div class="container-fluid text-center" id="about">
     <div class="row">
         <div class="col-sm-12 pager">
             <div class="tabs">
@@ -70,46 +70,56 @@
                   document.getElementById('card2').style.display='none';
                   document.getElementById('card3').style.display='block';">
                     Tab 3
-                </div>  <!--Hier boven staan de 'vakjes' en dit geeft aan als je op 1tje klikt zie je de andere niet meer-->
+                </div>
+                <!--Hier boven staan de 'vakjes' en dit geeft aan als je op 1tje klikt zie je de andere niet meer-->
                 <div class="cards" id="card1" style="display: none">
                     <div class="content-left">
-                        <h4 style="margin: 0">Golden Retriever</h4>
+                        <h4 style="margin: 0">Siberische Husky</h4>
                         <div class="x-icon" onclick=
                                 "document.getElementById('card1').style.display='none';">
                             x
                         </div>
-                        <a href="Goldenretriever/Goldenretriever.html"><img src="Goldenretriever/img/550x424.jpg" alt="Goldenretriever"></a>
+                        <a href="Husky/Husky.html"><img alt="Husky" src="Husky/img/Siberian-Husky-mit-Welpe.jpg"></a>
                     </div> <!--dit is wat je krijgt na het klikken 2 vakjes en een X knop om uit dat vakje te gaan-->
-                    <div class="content-right"><h3>De Golden retriever</h3><br>
-                        Deze hond is zeer geliefd onder de mensen. Hij is erg energiek, werklustig en gehoorzaam <br> en wordt vaak
-                        ingezet als hulphond of jachthond.<br>
-                        De Golden retriever is orgineel een jachthond en deze werdt vaak gebruikt omdat hij een 'zachte beet had'
+                    <div class="content-right"><h3>De Siberische Husky</h3><br>
+                        De Siberische husky is een hondenras, behorend tot de pool- en keeshonden van het oertype. <br>
+                        Van
+                        oorsprong is de husky gebruikt door Siberische nomaden om zich snel per slee over sneeuw en ijs
+                        te kunnen voortbewegen. <br> Toen omstreeks 1900 in Alaska wedstrijden met sledehonden in de
+                        belangstelling kwamen werd de husky ook buiten Siberië ontdekt. <br> Hij is gebouwd om sneeuw en
+                        kou
+                        te kunnen trotseren door zijn dikke vacht. <br> De husky heeft een atletische bouw en heeft veel
+                        beweging nodig.
                         <br>
-                        en dus als hij het prooi moest halen beschadigd hij deze niet.<br>
-                        Golden retrievers zijn bekend als goeie familiehonden doordat hij erg tolerant is en goed met kinderen is.
                         <br>
-                        <h4>klik <a href="Goldenretriever/Goldenretriever.html">hier</a> of op de foto voor meer info over dit hondenras.
+                        <h4>klik <a href="Husky/Husky.html">hier</a> of op de foto voor meer info over dit hondenras.
                         </h4>
                     </div>
                 </div> <!--dit is de content aan de rechter kant van het vakje waar je bijvoorbeeld fotos in kan doen-->
                 <div class="cards" id="card2" style="display: none">
                     <!--de card is bijna hetzelfde als de content hier zou je text in kunnen doen maar kun je beter niet doen want dat ziet er minder mooi uit-->
                     <div class="content-left">
-                        <h4 style="margin: 0">American Staffordshire Terriër</h4>
+                        <h4 style="margin: 0">Engelse Buldog</h4>
                         <div class="x-icon" onclick=
                                 "document.getElementById('card2').style.display='none';">
                             x
                         </div>
-                        <a href="American%20Staffordshire/American%20Staffordshire.html"><img src="American%20Staffordshire/img/IMG-20201029-WA0003.jpg" alt="Dexter" style="max-width: 60%; margin-top: 10px"></a>
+                        <a href="Buldog/Buldog.html"><img
+                                src="Buldog/img/pexels-creative-workshop-3978352.jpg"
+                                style="max-width: 60%; margin-top: 10px"></a>
                     </div>
-                    <div class="content-right"><h3>Dexter</h3><br>
-                        De American Staffordshire Terriër, ook wel AmStaff genoemd, heeft zijn oorsprong gemeen met de kleinere Staffordshire Bull Terriër uit Engeland.<br>
-                        Hun voorouder is in Engeland ontstaan doordat Bulldogs gekruist werden met terriërs om mee te doen aan hondengevechten.<br>
-                        Later werden de honden meegenomen door emigranten naar Amerika. Daar werd bij het fokken geselecteerd op grote dieren. <br>
-                        In eerste instantie werden de honden gebruikt voor allerlei functies zoals bewaken van de boerderij, <br>
-                        herdershond en gezinshond, maar ook werden de dieren nog voor gevechten in de ‘pit’, de ring, gebruikt (vandaar de toenmalige naam ‘pit bull’). <br>
+                    <div class="content-right"><h3>Engelse Buldog</h3><br>
+                        De Engelse buldog, meestal gewoon buldog (stierhond) genoemd, is een middelgroot hondenras. <br> De
+                        Engelse buldog is een zachtaardige gezinshond, goed met kinderen en geschikt voor gezinnen met
+                        een kleinere tuin of zelfs een appartement. <br> De hond heeft om in gezonde conditie te blijven
+                        voldoende beweging nodig, een dagelijkse wandeling is wel belangrijk. <br> Erkende FCI fokkers die
+                        aandacht besteden aan het combineren van gezonde ouderdieren, <br> verbeterden de laatste jaren de
+                        algemene gezondheid waardoor problemen met ademhaling, huid en uithoudingsvermogen, staart en
+                        gewrichtsproblemen verminderd zijn. <br> De aanschaf van een pup via de commerciële dierenhandel is
+                        een groot risico aangezien daar niet gelet wordt op gezondheid. <br><br>
 
-                        <h4>Klik <a href="American%20Staffordshire/American%20Staffordshire.html">hier</a> voor meer informatie over dit hondenras. </h4>
+                        <h4>Klik <a href="Buldog/Buldog.html">hier</a> voor meer
+                            informatie over dit hondenras. </h4>
                     </div>
 
                 </div>
@@ -121,17 +131,23 @@
                             x
                         </div>
                         <a href="Duitse%20Herder/DuitseHerder.html">
-                            <img src="Duitse%20Herder/img/Norah.JPG" alt="Norah"></a>
+                            <img alt="Norah" src="Duitse%20Herder/img/Norah.JPG"></a>
                     </div>
                     <div class="content-right">
                         <h3>De Duitse herder, een echte mensenvriend</h3><br>
-                        Met zijn statige uitstraling en grote loyaliteit is de Duitse herder een van de meest gewilde hondensoorten.<br>
-                        Daarnaast zijn deze honden erg intelligent en beschikken ze over een sterke, middelgrote lichaamsbouw. <br>
-                        Tot slot kunnen deze honden ook goed met kinderen overweg en is daarom een ideale familiehond<br> <br>
-                        Op de foto aan de linkerkant is onze eigen herder te zien. Ze heet Norah en is 22 weken jong op de foto.
-                        <br> Daarnaast is ze voor 12.5% een Mechelse herder. Dit is terug te zien aan de zwarte accenten op haar
-                        kop. <br>
-                        <h4>Klik <a href="Duitse%20Herder/DuitseHerder.html">hier</a> of op haar foto voor meer informatie over
+                        Met zijn statige uitstraling en grote loyaliteit is de Duitse herder een van de meest gewilde
+                        hondensoorten.<br>
+                        Daarnaast zijn deze honden erg intelligent en beschikken ze over een sterke, middelgrote
+                        lichaamsbouw. <br>
+                        Tot slot kunnen deze honden ook goed met kinderen overweg en is daarom een ideale
+                        familiehond<br> <br>
+                        Op de foto aan de linkerkant is onze eigen herder te zien. Ze heet Norah en is 22 weken jong op
+                        de foto.
+                        <br> Daarnaast is ze voor 12.5% een Mechelse herder. Dit is terug te zien aan de zwarte accenten
+                        op haar
+                        kop. <br> <br>
+                        <h4>Klik <a href="Duitse%20Herder/DuitseHerder.html">hier</a> of op haar foto voor meer
+                            informatie over
                             dit hondenras.</h4>
                     </div>
                 </div>
@@ -141,7 +157,7 @@
 </div>
 
 <!-- Container (Contact) -->
-<div id="contact" class="container-fluid bg-grey">
+<div class="container-fluid bg-grey" id="contact">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
         <div class="col-sm-5 text-center">
@@ -153,10 +169,10 @@
         <div class="col-sm-7 slideanim">
             <div class="row">
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
+                    <input class="form-control" id="naam" name="naam" placeholder="Naam" required type="text">
                 </div>
                 <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    <input class="form-control" id="email" name="email" placeholder="Email" required type="email">
                 </div>
             </div>
             <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>

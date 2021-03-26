@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <title>Puppylove</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Pictogrammen -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="../../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
+    <link href="Husky.css" rel="stylesheet">
+    <link href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
+
+</head>
+<body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button" style="background-color: white">
+
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
+                    alt="" class="Image" src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="../../index.html#about" target="_blank">OVER ONS</a></li>
+                <li><a href="../../index.html#mission" target="_blank">MISSIE</a></li>
+                <li><a href="../../index.html#services" target="_blank">WAARDEN</a></li>
+                <li><a href="../../index.html#portfolio" target="_blank">PORTFOLIO</a></li>
+                <li><a href="../../index.html#contact" target="_blank">CONTACT</a></li>
+                <li><a href="#" id="date"></a></li>
+
+                <script>
+
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+
+                </script>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+
+    <h1>PuppyLove</h1>
+    <p>Animalfriends Incorporated</p>
+
+</div>
+
+<!-- Container (About) -->
+<div class="container-fluid text-center" id="about">
+    <div class="row">
+        <div class="col-sm-12 pager">
+            <div id="info">
+
+                <h1 class="text-primary">Duitse Herder</h1>
+                <p>
+                    Te herkennen aan het middelgrote, ranke postuur is de Duitse herder een van de meest atletische
+                    hondensoorten ter wereld. <br>
+                    Vanaf 22 April 1899 is de Duitse herder officieel een hondenras. Zoals de naam al suggereert,
+                    origineert dit ras uit Duitsland.<br><br>
+                    Duitse herders zijn trouwe, hardwerkende honden en hebben veel lichaamsbeweging nodig. <br> <br>
+                    Hierdoor zijn het ideale speur en reddingshonden. Ze worden dan ook vaak ingezet door politie of bij
+                    zoekacties. <br>
+                    Ook zijn Duitse herders erg intelligent en goed met kinderen. Ze leren snel en luisteren goed. <br>
+                    Je moet wel consequent zijn, want het zijn van nature dominante honden.
+                </p>
+
+                <b class="text-info">Voor meer algemene informatie klik <a
+                        href="https://nl.wikipedia.org/wiki/Duitse_herder">hier</a>.</b> <br>
+                <b class="text-info">Voor meer informatie over de geschiedenis van de Duitse herder klik <a
+                        href="https://plazilla.com/page/4294975065/geschiedenis-van-de-duitse-herder">hier</a>.</b>
+
+            </div>
+
+            <div class="tab" id="tabHerder"
+                 onclick="document.getElementById('cardHerder').style.display='block';">
+                Foto's
+            </div>
+
+            <div class="cards" id="cardHerder" style="display: none">
+                <div class="content-left">
+                    <div class="x-icon" onclick=
+                            "document.getElementById('cardHerder').style.display='none';">
+                        x
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div id="imageContainer">
+                        <div class="row">
+                            <div class="column">
+
+                                <img alt="" src="img/pexels-adam-kontor-333083.jpg">
+                                <img alt="" src="img/sofia-guaico-xqqjZznrar0-unsplash.jpg">
+                                <img alt="" src="img/anish-hassan-pGbTXB2weKY-unsplash.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-kopie.jpg">
+                                <img alt="" src="img/Norah.JPG" height="20%">
+
+                            </div>
+                            <div class="column">
+                                <img alt="" src="img/lukas-vanatko-WvqRJNLdEFc-unsplash.jpg">
+                                <img alt="" src="img/amanda-sofia-pellenz-0HVlMQxzRuM-unsplash.jpg">
+                                <img alt="" src="img/pexels-gabriel-p-4264389.jpg">
+                                <img alt="" src="img/pexels-rrinna-2071556.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1800314.jpg">
+
+                            </div>
+                            <div class="column">
+
+                                <img alt="" src="img/sumudu-mohottige-L-Y1GNYW0jw-unsplash.jpg">
+                                <img alt="" src="img/madeline-ingram-lsiBD2aj5QE-unsplash.jpg" height="26%">
+                                <img alt="" src="img/pexels-pixabay-236622.jpg">
+                                <img alt="" src="img/wannes-de-mol-PCtm5A_plbo-unsplash.jpg" height="20%">
+                                <img alt="" src="img/pexels-ekaterina-bolovtsova-6606825.jpg">
+
+
+                            </div>
+                            <div class="column">
+                                <img alt="" src="img/pexels-boho-photography-5097412.jpg">
+                                <img alt="" src="img/pexels-velroy-fernandes-4218369.jpg" height="26%">
+                                <img alt="" src="img/tamas-tuzes-katai-ClCJDkLPoNM-unsplash.jpg" height="22.5%">
+                                <img alt="" src="img/pexels-carl-adrian-barcelo-3709026.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1633522.jpg">
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <img alt="" src="img/pexels-k-zoltan-342214.jpg" style="max-width: 100%; margin-bottom: 10px">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"
+                                    height="800px" src="https://www.youtube.com/embed/0EoLBfKjBQc"
+                                    title="YouTube video player"
+                                    width="100%"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Contact) -->
+<div class="container-fluid bg-grey" id="contact">
+
+    <h2 class="text-center">CONTACT</h2>
+
+    <div class="row">
+        <div class="col-sm-5 text-center">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> 0327746@student.rocvantwente.nl</p>
+
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="naam" name="naam" placeholder="Naam" required type="text">
+
+                </div>
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="email" name="email" placeholder="Email" required type="email">
+
+                </div>
+            </div>
+
+            <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+
+                    <button class="btn btn-default pull-right" type="submit">Verstuur</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+
+        <span class="glyphicon glyphicon-chevron-up" style="color: cornflowerblue"></span>
+
+    </a>
+
+    <p>Copyright® of High Quality Software 2021</p>
+
+</footer>
+
+<script>
+
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+
+</script>
+<br>
+</body>
+<!-- Bootstrap en jquery files -->
+<script src="../../Styling&Scripts/bootstrap/jquery.min.js"></script>
+<script src="../../Styling&Scripts/bootstrap/bootstrap.min.js"></script>
+<script src="../../Styling&Scripts/download&beveiliging.js"></script>
+</html>
