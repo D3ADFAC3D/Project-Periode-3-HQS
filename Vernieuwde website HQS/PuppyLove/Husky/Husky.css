@@ -77,4 +77,7 @@ body{
         flex: 100%;
         max-width: 100%;
     }
+    #column1{
+        margin-bottom: 50px;
+    }
 }
