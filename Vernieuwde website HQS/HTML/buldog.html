@@ -9,10 +9,42 @@
     <!-- Pictogrammen -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link href="../../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
-    <link href="../../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
-    <link href="Husky.css" rel="stylesheet">
-    <link href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
+    <link href="../../CSS/hoofdstyling.css" rel="stylesheet">
+    <link href="../../CSS/HQS_Puppylove.css" rel="stylesheet">
+    <link href="Buldog.css" rel="stylesheet">
+    <link href="../../IMG/afbeeldingen/fav_puppylove.png" rel="icon">
+
+    <script>
+        var i = 0;
+
+        function move() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("mijnBar");
+                var width = 10;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem.innerHTML = width + "%";
+                    }
+                    if (width == 100) {
+                        document.getElementById('cardHond').style.display = 'block';
+                        document.getElementById('fotoX').onclick = function (){
+                            document.getElementById('cardHond').style.display='none';
+                            elem.style.width = "0";
+                            elem.innerHTML = "0%";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 <body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
@@ -31,7 +63,7 @@
             </button>
 
             <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
-                    alt="" class="Image" src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
+                    alt="" class="Image" src="../../IMG/afbeeldingen/HQS_Logo.png"></a>
 
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -71,38 +103,56 @@
         <div class="col-sm-12 pager">
             <div id="info">
 
-                <h1 class="text-primary">Siberische Husky</h1>
-                <p>
-                <h3>Kenmerken van een Husky: </h3>
-                Siberische Husky’s hebben een compact, lichte en harige bouw. <br> Ze hebben middelgrote hoofden, soms
-                met
-                unieke zwart-witte of rode en witte patronen. <br> Hun middellange snuiten eindigen in zwarte neuzen (of
-                donkerbruin). <br> Ze hebben driehoekige oren die naar voren openen en amandelvormige ogen die een
-                betrokken
-                en sluwe uitdrukking creëren. <br> Hun trotse, rechtopstaande nek en rechte rug leiden naar volle
-                staarten. <br><br>
-                Gezondheid van Husky:<br><br>
-                Grootte: Reuen 53-60 cm en teven 51-56 cm<br>
-                Gewicht: Reuen 20-27 kg en teven 16-22,5 kg<br>
-                Kleur: Vele kleuren combinaties zijn toegestaan<br>
-                Vachtsoort: Dubbele en middelange vacht<br>
-                Gem. Leeftijd: 11-13 Jaar<br>
-                </p>
+                <h1 class="text-primary">Engelse Buldog</h1>
+
+
+                <h3> Buldog land van herkomst:</h3> <br>
+                De buldog of als sommige mensen het noemen de Engelse buldog. <br>
+                Het land van herkomst van de buldog is het verenigd koninkrijk.<br><br>
+
+                <h3>Hoe lang bestaat de ras buldog: </h3> <br>
+                De ras buldog bestaat al sinds het jaar 1231 waar de man Warren uit Stanford.<br>
+                De ras buldog is een nauwe bloedverwant van de oude vechthonden van het molossertype.<br>
+                In het jaar 1500 werd de hond in het Engelse literatuur bondogge en bolddogge.<br>
+                De oorspronkelijke naam buldog kwam voor in een brief van 1631 en 1632.<br>
+                Het eerste bewijs dat de buldog bestond werd gemaakt in 1740 in de vorm van een foto.<br>
+                <br>
+
+                <h3>Kenmerken van een buldog: </h3> <br>
+                Je herkent een buldog aan hun gerimpelde wangen en erg gladde vacht de buldog heeft ook sterke voorpoten
+                en lange achterpoten.<br>
+                De buldog is vriendelijk tegen mensen vooral kinderen en ook andere hondenrassen.<br>
+                De buldog is alleen wel erg koppig en beschermend.<br>
+                De gemiddelde volwassen buldog weegt tussen de 22 en 25 kilogram.<br>
+                De vacht is kortharig en komt voor in een paar verschillende kleuren bijv.<br>
+                beige, gestroomd, wit en wit gevlekt.<br> <br>
+
+                <h3>Gezondheid van buldog: </h3> <br> <br>
+                De buldog kan ademhalingsproblemen krijgen.<br>
+                Dat komt omdat de buldog kortademig is en zeer gevoelig is voor het brachycefaal obstructief
+                syndroom,<br> dit is een aandoening die veel voorkomt bij honden met een kleine schedel en een platte
+                neus <br> dat lijdt tot ernstige ademhalingsproblemen en een verminderd uithoudingsvermogen.
+                Er komt ook regelmatig gewichtsproblemen voor bij hun heupen en knieën.<br>
+                De buldog hebben ook moeilijkheid om zichzelf voort te planten waardoor ze vaak een keizersnee nodig
+                hebben.<br>
 
                 <b class="text-info">Voor meer algemene informatie klik <a
-                        href="https://nl.wikipedia.org/wiki/Siberische_husky">hier</a>.</b> <br>
+                        href="https://nl.wikipedia.org/wiki/Engelse_buldog">hier</a>.</b> <br>
 
             </div>
 
-            <div class="tab" id="tabHusky"
-                 onclick="document.getElementById('cardHusky').style.display='block';">
+            <div class="tab" id="tabHond"
+                 onclick="move()">
                 Foto's
             </div>
 
-            <div class="cards" id="cardHusky" style="display: none">
+            <div id="mijnProgressbar">
+                <div id="mijnBar">0%</div>
+            </div>
+
+            <div class="cards" id="cardHond" style="display: none">
                 <div class="content-left">
-                    <div class="x-icon" onclick=
-                            "document.getElementById('cardHusky').style.display='none';">
+                    <div class="x-icon" id="fotoX">
                         x
                     </div>
                 </div>
@@ -112,47 +162,47 @@
                         <div class="row">
                             <div class="column" id="column1">
 
-                                <img alt="" src="img/pexels-adeolu-ajayi-2526137.jpg">
-                                <img alt="" height="31%" src="img/pexels-antonio-florentini-803766.jpg">
-                                <img alt="" height="28%" src="img/pexels-badr-khechchab-4562477.jpg">
-                                <img alt="" src="img/pexels-julissa-helmuth-3726314.jpg">
-                                <img alt="" src="img/Siberian-Husky-mit-Welpe.jpg">
+                                <img alt="" height="30%" src="img/pexels-vlad-chețan-3096969.jpg">
+                                <img alt="" height="16%" src="img/pexels-alexia-bianchini-3693208.jpg">
+                                <img alt="" src="img/pexels-freestocksorg-6679995.jpg">
+                                <img alt="" height="27%" src="img/pexels-christian-montes-5288556.jpg">
+                                <img alt="" height="15%" src="img/pexels-joergk-photography-2069940.jpg">
 
                             </div>
                             <div class="column" id="column2">
-                                <img alt="" src="img/pexels-kateryna-babaieva-2853129.jpg">
-                                <img alt="" src="img/pexels-pixabay-220974.jpg">
-                                <img alt="" src="img/pexels-kateryna-babaieva-2853422.jpg">
-                                <img alt="" src="img/pexels-kateryna-babaieva-3715587.jpg">
+                                <img alt="" src="img/pexels-jens-mahnke-776078.jpg">
+                                <img alt="" src="img/pexels-adrianna-calvo-1596579.jpg">
+                                <img alt="" src="img/pexels-adrianna-calvo-1596577.jpg">
+                                <img alt="" height="15%" src="img/pexels-nikola-5883460.jpg">
+                                <img alt="" height="32%" src="img/pexels-anna-shvets-4587991.jpg">
 
                             </div>
                             <div class="column">
 
-                                <img alt="" src="img/pexels-pixabay-434090.jpg">
-                                <img alt="" src="img/pexels-pixabay-531533.jpg">
-                                <img alt="" height="32%" src="img/pexels-lucas-andrade-4681107.jpg">
-                                <img alt="" src="img/pexels-marian-750645.jpg">
-                                <img alt="" src="img/pexels-pixabay-60050.jpg">
-                                <img alt="" src="img/pexels-julissa-helmuth-3478875.jpg">
-
+                                <img alt="" src="img/pexels-erik-mclean-4061391.jpg">
+                                <img alt="" src="img/pexels-felipe-cespedes-3067503.jpg">
+                                <img alt="" src="img/pexels-marcos-bais-1843695.jpg">
+                                <img alt="" src="img/pexels-pixabay-160846.jpg">
 
                             </div>
                             <div class="column">
-                                <img alt="" src="img/pexels-la-miko-3671235.jpg">
-                                <img alt="" height="27%" src="img/pexels-rattasat-2802415.jpg">
-                                <img alt="" src="img/pexels-julissa-helmuth-3777229.jpg">
-                                <img alt="" height="30%" src="img/pexels-filip-klinovský-3693434.jpg">
+                                <img alt="" src="img/pexels-maria-rosenberg-2171583.jpg">
+                                <img alt="" src="img/pexels-creative-workshop-3978352.jpg">
+                                <img alt="" src="img/pexels-martin-dufosset-3930940.jpg">
+                                <img alt="" src="img/pexels-streetwindy-2144292.jpg">
+                                <img alt="" src="img/pexels-scott-spedding-2918094.jpg">
+                                <img alt="" height="14%" src="img/pexels-kervin-edward-lara-4452255.jpg">
 
 
                             </div>
                         </div>
                         <div class="row">
 
-                            <img alt="" src="img/pexels-kateryna-babaieva-3715585.jpg"
-                                 style="max-width: 100%; margin-bottom: 10px">
+                            <img alt="" id="borderphoto"
+                                 src="../Buldog/img/pexels-freestocksorg-5373946.jpg" style="max-width: 100%; margin-bottom: 10px;">
                             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen frameborder="0"
-                                    height="800px" src="https://www.youtube.com/embed/JOY0HVNJOtc"
+                                    height="800" src="https://www.youtube.com/embed/s1oo8qheP9c"
                                     title="YouTube video player"
                                     width="100%"></iframe>
 
@@ -257,7 +307,7 @@
 <br>
 </body>
 <!-- Bootstrap en jquery files -->
-<script src="../../Styling&Scripts/bootstrap/jquery.min.js"></script>
-<script src="../../Styling&Scripts/bootstrap/bootstrap.min.js"></script>
-<script src="../../Styling&Scripts/download&beveiliging.js"></script>
+<script src="../../CSS/bootstrap/jquery.min.js"></script>
+<script src="../../CSS/bootstrap/bootstrap.min.js"></script>
+<!--<script src="../../CSS/download&beveiliging.js"></script>-->
 </html>

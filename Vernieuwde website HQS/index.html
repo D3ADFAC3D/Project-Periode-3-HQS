@@ -2,58 +2,46 @@
 <html lang="nl">
 <head>
 
-    <!-- Scripts en fonts -->
     <title>Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Pictogrammen -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="Styling&Scripts/hoofdstyling.css">
-    <link rel="icon" href="Styling&Scripts/afbeeldingen/HQS_Logo.png">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="CSS/bootstrap.css" rel="stylesheet">
+    <link href="CSS/hoofdstyling.css" rel="stylesheet">
+    <link href="IMG/afbeeldingen/HQS_Logo.png" rel="icon">
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+<body data-offset="60" data-spy="scroll" data-target="navbar" id="myPage" oncontextmenu="return false">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<!-- maken van een hamburgermenu -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top">
     <div class="container">
-        <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: white">
+        <button aria-controls="myTogglerNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#myTogglerNav"
+                data-toggle="collapse"
+                type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <span class="icon-bar" style="background-color: cornflowerblue"></span>
-                <span class="icon-bar" style="background-color: cornflowerblue"></span>
-                <span class="icon-bar" style="background-color: cornflowerblue"></span>
+        <a class="navbar-brand" href="#"><img alt="" src="IMG/afbeeldingen/HQS_Logo.png"></a>
 
-            </button>
+        <div class="collapse navbar-collapse justify-content-center" id="myTogglerNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html#about">OVER ONS</a>
+                <a class="nav-item nav-link" href="index.html#mission">MISSIE</a>
+                <a class="nav-item nav-link" href="index.html#services">WAARDEN</a>
+                <a class="nav-item nav-link" href="index.html#portfolio">PORTFOLIO</a>
+                <a class="nav-item nav-link" href="index.html#contact">CONTACT</a>
+                <a class="nav-item nav-link" id="date">DATUM</a>
+            </div><!-- navbar -->
+        </div><!-- collapse -->
 
-            <a class="navbar-brand" style="padding-top: 7.5px;" href="index.html"><img
-                    src="Styling&Scripts/afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+    </div><!-- container -->
+</nav><!-- nav -->
 
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="#about">OVER ONS</a></li>
-                <li><a href="#mission">MISSIE</a></li>
-                <li><a href="#services">WAARDEN</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a id="date" href="#"></a></li>
-
-                <script>
-                    var today = new Date();
-                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-                    document.getElementById("date").innerHTML = "DATUM: " + date;
-                </script>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
 
 <!-- Website title  -->
 <div class="jumbotron text-center">
@@ -63,10 +51,10 @@
 
 </div>
 
-<!-- Container (About) -->
-<div id="about" class="container-fluid text-center">
-    <div class="row">
-        <div class="col-sm-12 pager">
+<!-- Algemene Container -->
+<div class="container-fluid text-center" id="about">
+    <div class="row"> <!--Open row -->
+        <div class="col-sm-12 pager"> <!--Open kolom -->
 
             <h2>Over het bedrijf</h2><br>
             <h4>Eigenaarschap en ontwikkeling</h4><br>
@@ -74,20 +62,15 @@
                 HQS bestaan nu 10 jaar en heeft ongeveer 12 scrumgroepen aan het werk. De medewerkers hebben allemaal
                 kennis van C#, HTML, CSS, javascript & GitHub</p>
 
-        </div>
-    </div>
+        </div> <!--Sluit kolom -->
+    </div> <!--Sluit row -->
 
-    <!-- Mission Button -->
-    <div id="mission" class="container-fluid bg-grey">
+    <!-- Grote Middencontainer -->
+    <div class="container-fluid bg-grey" id="mission">
         <div class="row">
-            <div class="col-sm-4">
-
-                <span class="glyphicon glyphicon-globe logo slideanim" style="color: cornflowerblue"></span>
-
-            </div>
 
             <!-- "Waarden" text -->
-            <div class="col-sm-8">
+            <div class="col-sm-12">
 
                 <h2>Onze Waarden</h2><br>
                 <h4><strong>Onze missie:</strong> HQS hecht veel waarde aan het opleveren van software van hoge
@@ -101,7 +84,7 @@
         </div>
 
         <!-- Container (Services) -->
-        <div id="services" class="container-fluid text-center">
+        <div class="container-fluid text-center" id="services">
 
             <h2>Wat wij belangrijk vinden</h2>
             <br>
@@ -115,7 +98,7 @@
                 </div>
 
                 <!-- Container (Werksfeer) -->
-                <div class="col-sm-4">
+                <div class="col-sm-4 cfblue">
 
                     <span class="glyphicon glyphicon-heart logo-small" style="color:cornflowerblue;"></span>
                     <h4>Werksfeer</h4>
@@ -137,7 +120,7 @@
             <!-- Container (Communicatie) -->
             <br><br>
             <div class="row slideanim">
-                <div class="col-sm-4">
+                <div class="col-sm-4 cfblue">
 
                     <span class="glyphicon glyphicon-earphone logo-small" style="color:cornflowerblue;"></span>
                     <h4>Communicatie</h4>
@@ -155,7 +138,7 @@
                 </div>
 
                 <!-- Container (DevOps) -->
-                <div class="col-sm-4">
+                <div class="col-sm-4 cfblue">
 
                     <span class="glyphicon glyphicon-wrench logo-small" style="color:cornflowerblue;"></span>
                     <h4 style="color:#303030;">DevOps</h4>
@@ -165,30 +148,29 @@
             </div>
 
             <!-- Container (Puppylove) -->
-            <div id="portfolio" class="container-fluid text-center bg-grey">
+            <div class="container-fluid text-center bg-grey" id="portfolio">
 
                 <h2>Portfolio</h2><br>
                 <h4>Wat wij gemaakt hebben</h4>
 
                 <div class="row text-center slideanim">
                     <div class="col-sm-4">
-                        <div class="thumbnail no-decoration"><a href="PuppyLove/index.html">
+                        <div class="thumbnail no-decoration"><a href="HTML/puppyLove.html">
 
-                            <img src="Styling&Scripts/afbeeldingen/PuppyLove.png" style="width: auto; height: auto;" alt="Puppylove"
-                                 width="200" height="200">
+                            <img alt="Puppylove" src="IMG/afbeeldingen/PuppyLove.png">
                             <p>PuppyLove</p>
                             <p>Animalfriends Incorporated</p>
 
                         </a></div>
                     </div>
 
-                    <!-- Container (Simple Calculator) -->
+                    <!-- Container (Spelletjes) -->
                     <div class="col-sm-4">
-                        <div class="thumbnail no-decoration" style="height: 315px;"><a
+                        <div class="thumbnail no-decoration"><a
                                 href="Spelletjes/spelletjes.html">
 
-                            <img style="width: 200px; height: 200px;" src="Styling&Scripts/afbeeldingen/HQS_Logo.png" alt="Spelletjes"
-                                 width="auto" height="auto">
+                            <img alt="Spelletjes"
+                                 src="IMG/afbeeldingen/HQS_Logo.png">
                             <p>Spelletjes</p>
                             <p>3-in-1</p>
 
@@ -196,11 +178,12 @@
                     </div>
                     <!-- Container (DevOps) -->
                     <div class="col-sm-4">
-                        <div class="thumbnail no-decoration" style="height: 315px;"><a target="_blank"
-                                                                                       href="https://dev.azure.com/Larsie/Project%20Periode%203">
+                        <div class="thumbnail no-decoration"><a
+                                href="https://dev.azure.com/Larsie/Project%20Periode%203"
+                                target="_blank">
 
-                            <img style="width: 200px; height: 200px;" src="Styling&Scripts/afbeeldingen/dev-ops_logo.png" alt="DevOps"
-                                 width="auto" height="auto">
+                            <img alt="DevOps"
+                                 src="IMG/afbeeldingen/dev-ops_logo.png" class="devOpsImg">
                             <p>DevOps</p>
                             <p>Onze DevOps omgeving</p>
 
@@ -212,34 +195,35 @@
                 </div>
 
                 <!-- Container (Contact) -->
-                <div id="contact" class="container-fluid bg-grey">
+                <div class="container-fluid bg-grey" id="contact">
 
                     <h2 class="text-center">CONTACT</h2>
 
                     <div class="row">
                         <div class="col-sm-5 text-center">
 
-                            <p>Contact opnemen?</p>
-                            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
-                            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
-                            <p><span class="glyphicon glyphicon-envelope"></span> respons@hqsinternational.org</p>
+                            <h3 class="text-primary ">Contact opnemen?</h3>
+                            <br>
+                            <p>Almelo, NL</p>
+                            <p>+31 0646854690</p>
+                            <p>respons@hqsinternational.org</p>
 
                         </div>
 
                         <!-- Container (Contact) Second Part -->
                         <div class="col-sm-7 slideanim">
-                            <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
+                            <form action="mailto:respons@hqsinternational.org" enctype="text/plain" method="post">
                                 <div class="row">
                                     <div class="col-sm-6 form-group">
-                                        <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text"
-                                               required>
+                                        <input class="form-control" id="naam" name="naam" placeholder="Naam" required
+                                               type="text">
 
                                     </div>
                                     <div class="col-sm-6 form-group">
 
                                         <input class="form-control" id="email" name="email" placeholder="Email"
-                                               type="email"
-                                               required>
+                                               required
+                                               type="email">
 
                                     </div>
                                 </div>
@@ -250,18 +234,18 @@
                                 <div class="row">
                                     <div class="col-sm-12 form-group">
 
-                                        <button class="btn btn-default pull-right" type="submit">Verstuur</button>
+                                        <button class="btn btn-primary" type="submit">Verstuur</button>
 
                                     </div>
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> <!--Sluit class row af -->
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div><!-- Sluiten Grote Middencontainer -->
+</div><!-- Sluiten Algemene Container -->
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
@@ -273,49 +257,39 @@
 
 </footer>
 
-<!-- Script -->
-<script>
-
-    $(document).ready(function () {
-        // Voeg soepele scroll beweging toe aan alle links in de nav en footer.
-        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-            // Zeker weten dat de this.hash een waarde heeft voordat hij wordt overschreven.
-            if (this.hash !== "") {
-                // Voorkomen van standaard anker klikgedrag.
-                event.preventDefault();
-
-                // Sla hash op.
-                var hash = this.hash;
-
-                // Maak gebruik van jQuery's animate() methode om soepele scrollbewegingen toe te voegen.
-                // het optionele nummer (900) geeft aan hoeveel milliseconden het duurt om tot aan de specifieke plek te scrollen.
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
-
-                    // Voeg hash (#) toe aan de URL op het moment dat het scrollen klaar is (standaard klikgedrag).
-                    window.location.hash = hash;
-                });
-            } // Einde if-statement.
-        });
-
-        $(window).scroll(function () {
-            $(".slideanim").each(function () {
-                var pos = $(this).offset().top;
-
-                var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                }
-            });
-        });
-    })
-
-</script>
 <br>
 <!-- Bootstrap en jquery files -->
-<script src="Styling&Scripts/bootstrap/jquery.min.js"></script>
-<script src="Styling&Scripts/bootstrap/bootstrap.min.js"></script>
-<script src="Styling&Scripts/download&beveiliging.js"></script>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/popper.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<!--<script src="JS/download_beveiliging.js"></script>-->
+
+<script>// JQUERY functie voor aangepaste Smooth scroll
+$(function () {
+    var topoffset = 60; //variable for menu height
+
+    //Use smooth scrolling when clicking on navigation
+    $('.navbar-nav a').click(function () {
+        if (location.pathname.replace(/^\//, '') ===
+            this.pathname.replace(/^\//, '') &&
+            location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - topoffset
+                }, 500);
+                return false;
+            } //target.length
+        } //click function
+    }); //smooth scrolling
+});
+
+// script om de datum in de navbar te zetten
+var today = new Date();
+var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+document.getElementById("date").innerHTML = "DATUM: " + date;
+</script>
 </body>
 </html>

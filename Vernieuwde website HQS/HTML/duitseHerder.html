@@ -7,12 +7,49 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <!-- Pictogrammen -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="script" href="../../CSS/bootstrap/js/bootstrap.js">
+    <link rel="script" href="../../CSS/bootstrap/js/bootstrap.bundle.js">
     <!-- CSS -->
-    <link href="../../Styling&Scripts/hoofdstyling.css" rel="stylesheet">
-    <link href="../../Styling&Scripts/HQS_Puppylove.css" rel="stylesheet">
-    <link href="Buldog.css" rel="stylesheet">
-    <link href="../../Styling&Scripts/afbeeldingen/fav_puppylove.png" rel="icon">
+    <link href="../../CSS/hoofdstyling.css" rel="stylesheet">
+    <link href="../../CSS/HQS_Puppylove.css" rel="stylesheet">
+    <link href="DuitseHerder.css" rel="stylesheet">
+    <link href="../../IMG/afbeeldingen/fav_puppylove.png" rel="icon">
+    <link rel="stylesheet" href="../../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../../CSS/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../CSS/bootstrap-reboot.css">
+
+    <script>
+        var i = 0;
+
+        function move() {
+            if (i == 0) {
+                i = 1;
+                var elem = document.getElementById("mijnBar");
+                var width = 10;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem.style.width = width + "%";
+                        elem.innerHTML = width + "%";
+                    }
+                    if (width == 100) {
+                        document.getElementById('cardHond').style.display = 'block';
+                        document.getElementById('fotoX').onclick = function (){
+                            document.getElementById('cardHond').style.display='none';
+                            elem.style.width = "0";
+                            elem.innerHTML = "0%";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 <body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage" oncontextmenu="return false">
@@ -31,7 +68,7 @@
             </button>
 
             <a class="navbar-brand" href="../index.html" style="padding-top: 7.5px;"><img
-                    alt="" class="Image" src="../../Styling&Scripts/afbeeldingen/HQS_Logo.png"></a>
+                    alt="" class="Image" src="../../IMG/afbeeldingen/HQS_Logo.png"></a>
 
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -71,53 +108,37 @@
         <div class="col-sm-12 pager">
             <div id="info">
 
-                <h1 class="text-primary">Engelse Buldog</h1>
-
-
-                <h3> Buldog land van herkomst:</h3> <br>
-                De buldog of als sommige mensen het noemen de Engelse buldog. <br>
-                Het land van herkomst van de buldog is het verenigd koninkrijk.<br><br>
-
-                <h3>Hoe lang bestaat de ras buldog: </h3> <br>
-                De ras buldog bestaat al sinds het jaar 1231 waar de man Warren uit Stanford.<br>
-                De ras buldog is een nauwe bloedverwant van de oude vechthonden van het molossertype.<br>
-                In het jaar 1500 werd de hond in het Engelse literatuur bondogge en bolddogge.<br>
-                De oorspronkelijke naam buldog kwam voor in een brief van 1631 en 1632.<br>
-                Het eerste bewijs dat de buldog bestond werd gemaakt in 1740 in de vorm van een foto.<br>
-                <br>
-
-                <h3>Kenmerken van een buldog: </h3> <br>
-                Je herkent een buldog aan hun gerimpelde wangen en erg gladde vacht de buldog heeft ook sterke voorpoten
-                en lange achterpoten.<br>
-                De buldog is vriendelijk tegen mensen vooral kinderen en ook andere hondenrassen.<br>
-                De buldog is alleen wel erg koppig en beschermend.<br>
-                De gemiddelde volwassen buldog weegt tussen de 22 en 25 kilogram.<br>
-                De vacht is kortharig en komt voor in een paar verschillende kleuren bijv.<br>
-                beige, gestroomd, wit en wit gevlekt.<br> <br>
-
-                <h3>Gezondheid van buldog: </h3> <br> <br>
-                De buldog kan ademhalingsproblemen krijgen.<br>
-                Dat komt omdat de buldog kortademig is en zeer gevoelig is voor het brachycefaal obstructief
-                syndroom,<br> dit is een aandoening die veel voorkomt bij honden met een kleine schedel en een platte
-                neus <br> dat lijdt tot ernstige ademhalingsproblemen en een verminderd uithoudingsvermogen.
-                Er komt ook regelmatig gewichtsproblemen voor bij hun heupen en knieën.<br>
-                De buldog hebben ook moeilijkheid om zichzelf voort te planten waardoor ze vaak een keizersnee nodig
-                hebben.<br>
+                <h1 class="text-primary">Duitse Herder</h1>
+                <p>
+                    Te herkennen aan het middelgrote, ranke postuur is de Duitse herder een van de meest atletische
+                    hondensoorten ter wereld. <br>
+                    Vanaf 22 April 1899 is de Duitse herder officieel een hondenras. Zoals de naam al suggereert,
+                    origineert dit ras uit Duitsland.<br><br>
+                    Duitse herders zijn trouwe, hardwerkende honden en hebben veel lichaamsbeweging nodig. <br> <br>
+                    Hierdoor zijn het ideale speur en reddingshonden. Ze worden dan ook vaak ingezet door politie of bij
+                    zoekacties. <br>
+                    Ook zijn Duitse herders erg intelligent en goed met kinderen. Ze leren snel en luisteren goed. <br>
+                    Je moet wel consequent zijn, want het zijn van nature dominante honden.
+                </p>
 
                 <b class="text-info">Voor meer algemene informatie klik <a
-                        href="https://nl.wikipedia.org/wiki/Engelse_buldog">hier</a>.</b> <br>
+                        href="https://nl.wikipedia.org/wiki/Duitse_herder">hier</a>.</b> <br>
+                <b class="text-info">Voor meer informatie over de geschiedenis van de Duitse herder klik <a
+                        href="https://plazilla.com/page/4294975065/geschiedenis-van-de-duitse-herder">hier</a>.</b>
 
             </div>
-
-            <div class="tab" id="tabBuldog"
-                 onclick="document.getElementById('cardBuldog').style.display='block';">
+            <div class="tab" id="tabHond"
+                 onclick="move()">
                 Foto's
             </div>
 
-            <div class="cards" id="cardBuldog" style="display: none">
+            <div id="mijnProgressbar">
+                <div id="mijnBar">0%</div>
+            </div>
+
+            <div class="cards" id="cardHond" style="display: none">
                 <div class="content-left">
-                    <div class="x-icon" onclick=
-                            "document.getElementById('cardBuldog').style.display='none';">
+                    <div class="x-icon" id="fotoX">
                         x
                     </div>
                 </div>
@@ -125,49 +146,50 @@
                 <div class="content-right">
                     <div id="imageContainer">
                         <div class="row">
-                            <div class="column" id="column1">
+                            <div class="column">
 
-                                <img alt="" src="img/pexels-vlad-chețan-3096969.jpg" height="30%">
-                                <img alt="" src="img/pexels-alexia-bianchini-3693208.jpg" height="16%">
-                                <img alt="" src="img/pexels-freestocksorg-6679995.jpg">
-                                <img alt="" src="img/pexels-christian-montes-5288556.jpg" height="27%">
-                                <img alt="" src="img/pexels-joergk-photography-2069940.jpg" height="15%">
+                                <img alt="" src="img/pexels-adam-kontor-333083.jpg">
+                                <img alt="" src="img/sofia-guaico-xqqjZznrar0-unsplash.jpg">
+                                <img alt="" src="img/anish-hassan-pGbTXB2weKY-unsplash.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-kopie.jpg">
+                                <img alt="" height="20%" src="img/Norah.JPG">
 
                             </div>
-                            <div class="column" id="column2">
-                                <img alt="" src="img/pexels-jens-mahnke-776078.jpg">
-                                <img alt="" src="img/pexels-adrianna-calvo-1596579.jpg">
-                                <img alt="" src="img/pexels-adrianna-calvo-1596577.jpg">
-                                <img alt="" src="img/pexels-nikola-5883460.jpg" height="15%">
-                                <img alt="" src="img/pexels-anna-shvets-4587991.jpg" height="32%">
+                            <div class="column">
+                                <img alt="" src="img/lukas-vanatko-WvqRJNLdEFc-unsplash.jpg">
+                                <img alt="" src="img/amanda-sofia-pellenz-0HVlMQxzRuM-unsplash.jpg">
+                                <img alt="" src="img/pexels-gabriel-p-4264389.jpg">
+                                <img alt="" src="img/pexels-rrinna-2071556.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1800314.jpg">
 
                             </div>
                             <div class="column">
 
-                                <img alt="" src="img/pexels-erik-mclean-4061391.jpg">
-                                <img alt="" src="img/pexels-felipe-cespedes-3067503.jpg">
-                                <img alt="" src="img/pexels-marcos-bais-1843695.jpg">
-                                <img alt="" src="img/pexels-pixabay-160846.jpg">
+                                <img alt="" src="img/sumudu-mohottige-L-Y1GNYW0jw-unsplash.jpg">
+                                <img alt="" height="26%" src="img/madeline-ingram-lsiBD2aj5QE-unsplash.jpg">
+                                <img alt="" src="img/pexels-pixabay-236622.jpg">
+                                <img alt="" height="20%" src="img/wannes-de-mol-PCtm5A_plbo-unsplash.jpg">
+                                <img alt="" src="img/pexels-ekaterina-bolovtsova-6606825.jpg">
+
 
                             </div>
                             <div class="column">
-                                <img alt="" src="img/pexels-maria-rosenberg-2171583.jpg">
-                                <img alt="" src="img/pexels-creative-workshop-3978352.jpg">
-                                <img alt="" src="img/pexels-martin-dufosset-3930940.jpg">
-                                <img alt="" src="img/pexels-streetwindy-2144292.jpg">
-                                <img alt="" src="img/pexels-scott-spedding-2918094.jpg">
-                                <img alt="" src="img/pexels-kervin-edward-lara-4452255.jpg" height="14%">
+                                <img alt="" src="img/pexels-boho-photography-5097412.jpg">
+                                <img alt="" height="26%" src="img/pexels-velroy-fernandes-4218369.jpg">
+                                <img alt="" height="22.5%" src="img/tamas-tuzes-katai-ClCJDkLPoNM-unsplash.jpg">
+                                <img alt="" src="img/pexels-carl-adrian-barcelo-3709026.jpg">
+                                <img alt="" src="img/pexels-jozef-fehér-1633522.jpg">
 
 
                             </div>
                         </div>
                         <div class="row">
 
-                            <img alt="" src="../Buldog/img/pexels-freestocksorg-5373946.jpg"
-                                 style="max-width: 100%; margin-bottom: 10px;" id="borderphoto">
+                            <img alt="" src="img/pexels-k-zoltan-342214.jpg"
+                                 style="max-width: 100%; margin-bottom: 10px">
                             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen frameborder="0"
-                                    height="800" src="https://www.youtube.com/embed/s1oo8qheP9c"
+                                    height="800px" src="https://www.youtube.com/embed/0EoLBfKjBQc"
                                     title="YouTube video player"
                                     width="100%"></iframe>
 
@@ -272,7 +294,7 @@
 <br>
 </body>
 <!-- Bootstrap en jquery files -->
-<script src="../../Styling&Scripts/bootstrap/jquery.min.js"></script>
-<script src="../../Styling&Scripts/bootstrap/bootstrap.min.js"></script>
-<!--<script src="../../Styling&Scripts/download&beveiliging.js"></script>-->
+<script src="../../CSS/bootstrap/jquery.min.js"></script>
+<script src="../../CSS/bootstrap/bootstrap.min.js"></script>
+<script src="../../JS/download&beveiliging.js"></script>
 </html>
