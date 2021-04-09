@@ -1,25 +1,34 @@
-document.onkeypress = function (event) {
-    event = (event || window.event);
-    if (event.keyCode === 123) {
-        return false;
-    }
+if ('matchMedia' in window) {
+    // Chrome, Firefox, and IE 10 support mediaMatch listeners
+    window.matchMedia('print').addListener(function (media) {
+        if (media.matches) {
+            beforePrint();
+        } else {
+            // Fires immediately, so wait for the first mouse movement
+            $(document).one('mouseover', afterPrint);
+            //als er in die window geprint is dan gaat hij naar de functie before print, anders laat hij de content weer zien
+        }
+    });
+} else {
+    // IE and Firefox fire before/after events
+    $(window).on('beforeprint', beforePrint);
+    $(window).on('afterprint', afterPrint);
+} // dit is voor internet explorer en firefox
+
+function beforePrint() {
+    $("#AllContent").hide();
+    $(".PrintMessage").show();
 }
-document.onmousedown = function (event) {
-    event = (event || window.event);
-    if (event.keyCode === 123) {
-        return false;
-    }
-}
-document.onkeydown = function (event) {
-    event = (event || window.event);
-    if (event.keyCode === 123) {
-        return false;
-    }
-}
+
+function afterPrint() {
+    $(".PrintMessage").hide();
+    $("#AllContent").show(); //dit laat print message hiden en all content showwen
+} /*dit is voor print screen*/
+
 function schakelCtrlUit(e)
 {
 //list all CTRL + key combinations you want to disable
-    var verbodenToetsen = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w', 'i');
+    var verbodenToetsen = ['a', 'n', 'c', 'x', 'v', 'j' , 'w', 'i','j','p'];
     var toets;
     var isCtrl;
     if(window.event)
@@ -55,17 +64,22 @@ function schakelCtrlUit(e)
 }
 
 document.onkeydown = function(e) {
-    if (e.keyCode === 123){
-        alert('Dit is niet toegestaan');
+    if(event.keyCode == 123) {
+        $('#bs_Warning').show();
+        window.setTimeout(hide, 5000);
         return false;
-    }
-    else if (e.ctrlKey && (e.keyCode === 86 || e.keyCode === 73 || e.keyCode === 117 || e.keyCode === 85 || e.keyCode === 67 || e.keyCode === 123)){
-        alert('Dit is niet toegestaan');
+    } //Tegen F12
+    else if (e.ctrlKey && (event.keyCode === 86 || event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 117 || event.keyCode === 85 || event.keyCode === 67 || event.keyCode === 123 || event.keyCode === 80)){
+        $('#bs_Warning').show();
+        window.setTimeout(hide, 5000);
         return false;
     } else {
         return true;
     }
 }
+function hide (){
+    $('#bs_Warning').hide();
+} // deze functie is aangemaakt om de alert te hiden na een bepaalde tijd
 
 //Download Teller
 function klikTeller() {
