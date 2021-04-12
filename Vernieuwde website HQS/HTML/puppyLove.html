@@ -47,6 +47,11 @@
     <p>Animalfriends Incorporated</p>
 </div>
 
+<!-- Een stuk code dat je te zien krijgt op het moment dat je broncode wil zien, probeert te printen, of de code wil bekijken.-->
+<div class="  alert alert-dark collapse" id="bs_Warning" role="alert">
+    Het is verboden de code van de pagina te bekijken, bewerken of uit te printen.
+</div> <!-- einde -->
+
 <!-- Container (About) -->
 <div class="container-fluid text-center" id="about">
     <div class="row">
@@ -191,46 +196,39 @@
     <p>Copyright® of High Quality Software 2021</p>
 </footer>
 
-<script>
-    $(document).ready(function () {
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-
-        $(window).scroll(function () {
-            $(".slideanim").each(function () {
-                var pos = $(this).offset().top;
-
-                var winTop = $(window).scrollTop();
-                if (pos < winTop + 600) {
-                    $(this).addClass("slide");
-                }
-            });
-        });
-    })
-</script>
 <br>
-</body>
 <!-- Bootstrap en jquery files -->
-<script src="../CSS/bootstrap/jquery.min.js"></script>
-<script src="../CSS/bootstrap/bootstrap.min.js"></script>
-<script src="../JS/download&beveiliging.js"></script>
+<script src="../JS/jquery.min.js"></script>
+<script src="../JS/popper.min.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
+<script src="../JS/download_beveiliging.js"></script>
+
+<script>// JQUERY functie voor aangepaste Smooth scroll
+$(function () {
+    var topoffset = 60; //variable for menu height
+
+    //Use smooth scrolling when clicking on navigation
+    $('.navbar-nav a').click(function () {
+        if (location.pathname.replace(/^\//, '') ===
+            this.pathname.replace(/^\//, '') &&
+            location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - topoffset
+                }, 500);
+                return false;
+            } //target.length
+        } //click function
+    }); //smooth scrolling
+});
+
+// script om de datum in de navbar te zetten
+var today = new Date();
+var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+document.getElementById("date").innerHTML = "DATUM: " + date;
+</script>
+</body>
 </html>

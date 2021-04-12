@@ -56,6 +56,8 @@ function schakelCtrlUit(e)
             if(verbodenToetsen[i].toLowerCase() === String.fromCharCode(toets).toLowerCase())
             {
                 alert('Toets combinatie CTRL + '+String.fromCharCode(toets) +' is uitgeschakeld.');
+                /*document.getElementById("bs_Warning").scrollIntoView({behavior: 'smooth'});*/
+                /*window.location.hash = "bs_Warning";*/
                 return false;
             }
         }
@@ -66,11 +68,13 @@ function schakelCtrlUit(e)
 document.onkeydown = function(e) {
     if(event.keyCode == 123) {
         $('#bs_Warning').show();
+        document.getElementById("myPage").scrollIntoView({behavior: 'smooth'});
         window.setTimeout(hide, 5000);
         return false;
     } //Tegen F12
     else if (e.ctrlKey && (event.keyCode === 86 || event.keyCode === 73 || event.keyCode === 74 || event.keyCode === 117 || event.keyCode === 85 || event.keyCode === 67 || event.keyCode === 123 || event.keyCode === 80)){
         $('#bs_Warning').show();
+        document.getElementById("myPage").scrollIntoView({behavior: 'smooth'});
         window.setTimeout(hide, 5000);
         return false;
     } else {

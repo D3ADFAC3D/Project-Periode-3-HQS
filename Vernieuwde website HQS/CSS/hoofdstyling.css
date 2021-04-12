@@ -175,6 +175,10 @@ h4 {
     color: white;
 }
 
+#bs_Warning{
+    text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
     #contact p {
         font-size: 22px;
